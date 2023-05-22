@@ -19,7 +19,7 @@ export class HomePage implements OnInit {
     })
   }
   deleteSong(song:any, i:number) {
-    if (window.confirm('Do you want to delete user?')) {
+    if (window.confirm('Do you want to delete the song?')) {
       this.songService.deleteSong(song._id)
         .subscribe(() => {
           this.Songs.splice(i, 1);
